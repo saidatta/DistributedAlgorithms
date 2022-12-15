@@ -71,7 +71,7 @@ func main() {
 	// Create a new scheduler with some tasks.
 	scheduler := NewScheduler([]Task{
 		{period: 2, deadline: 2},
-		{period: 1, deadline: 3},
+		{period: 3, deadline: 3},
 		{period: 5, deadline: 5},
 	})
 
