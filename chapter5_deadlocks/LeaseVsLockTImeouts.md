@@ -1,0 +1,7 @@
+Leases and lock timeouts are similar in some ways, but they are not the same thing.
+
+A lease is a mechanism that is used to control access to a shared resource, such as a file or a database record. It typically involves a leasing process, in which a client acquires a lease on the resource, uses it for a certain amount of time, and then releases the lease when it is finished. The lease is usually granted by a server or other authority, and it ensures that only one client has access to the resource at a time.
+
+Lock timeouts, on the other hand, are a mechanism that is used to prevent transactions from becoming stuck waiting for locks that are held by other transactions. In a database system, for example, a lock timeout can be set on a transaction to specify how long it can wait for a lock before it is automatically released. If the transaction is unable to acquire the lock within the specified time limit, the lock timeout will expire and the transaction will be terminated.
+
+While leases and lock timeouts are both used to control access to shared resources, they serve different purposes and operate in different ways. Leases are used to ensure that only one client has access to a resource at a time, while lock timeouts are used to prevent transactions from becoming stuck waiting for locks. As such, they are not the same thing, although they may be used together in some systems to improve performance and prevent deadlocks.
