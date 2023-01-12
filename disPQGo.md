@@ -1,4 +1,4 @@
-First, let's define the data model for our priority queue. As before, we will use a Redis sorted set to represent the queue, where the score of each element is its priority. The element itself will be the value in the sorted set.
+First, let's define the data model for our priority queue. Let's use a Redis sorted set to represent the queue, where the score of each element is its priority. The element itself will be the value in the sorted set.
 
 Next, we will define a Queue struct to hold the connection to the Redis server and the name of the sorted set we are using to store the queue.
 
